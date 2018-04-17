@@ -34,9 +34,9 @@ def blog():
         blog_name = request.form['name']
         blog_content = request.form['content']
         if blog_name == '':
-            title_error = "Please enter a title."
+            title_error = "Please enter a title"
         if blog_content == '':
-            content_error = "Can't post without content."
+            content_error = "Can't post without content"
         if title_error != '' or content_error != '' :    
             return redirect('/newpost?title_error=' + title_error + '&name=' + blog_name + '&content_error=' + content_error + '&content=' + blog_content)
 
