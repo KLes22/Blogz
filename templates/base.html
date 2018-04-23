@@ -64,15 +64,25 @@
 
         </style>
     </head>
-<body>
-    <ul>
-        <li><a href="/blog">My Blog Page</a></li>
-        <li><a href="/newpost">Create New Entry</a></li>
-    </ul>
-    </nav>
+        <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog Page</a></li>
+                <li><a href="/newpost">Create New Entry</a></li>
+                <li><a href="/signup">User Signup</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+        </header>
 
-    {% block content %}
-    {% endblock %}
+    <title>BlogZ!</title>
 
-</body>
+        <body>
+            
+            {% block content %}
+            {% endblock %}
+
+        </body>
 </html>

@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<center>
-    <h1>{{title}}</h1>
-    <br>
-    <p>{{body}}</p>
-</center>
+<h1 align="center">{{blog.title}}</h1></br>
+<br>
+<p align="center">{{blog.body}}</p>
+<br>
+<p align="center">Written by <a href='/blog?user={{user.id}}'>{{user.username}}</a></p>
 
 
 {% endblock %}
