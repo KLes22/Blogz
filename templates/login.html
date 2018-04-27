@@ -3,18 +3,23 @@
 {% block content %}
 
 <h2>Blogz Login!</h2>
-<form action='/login' method='post'>
-    <label>Username:<input type='text' name='username' /> <p class='error' style='color: red;'>{{username_err}}</p>
-    </label>
 
-    <label>Password:<input type='password' name='password' /> <p class='error' style='color: red;'>{{password_err}}</p>
-    </label>
-
-    <p>New? please <a href='/signup'>signup</a> to post a blog!</p>
-
-    <input type="submit" value="Login" />
-
-</form>
-
+<form action="/login" method="post">
+        
+    <label for="username">Username:</label>
+    <input id="username" type="text" name="username" value='{{username}}'/>
     
+    <br>
+    
+    <label for="Password">Password:</label>
+    <input id="Password" type="password" name="Password" />
+    
+    <br>
+
+    <input class="submit" type="submit" value="Log Me In!"/>
+</form>
+<h3> <a href='/signup'>Create Account</a></h3>
+
+
+
 {% endblock %}

@@ -4,12 +4,15 @@
 
 <h1>Create Blog Entry</h1>
     <form action='/newpost' method='post'>
-        <label style="margin-bottom: 15px;">New Blog Title:
-        <br/><input type="text" name="title" /><p class="error" style="color: red;">{{title_err}}</p><br/>
+        <label>
+            New Blog Title:
+            <input type="text" name="blog_title" value="{{post_title}}" />
         </label>
+
+        <p>{{title_error}}</p>
             
-        <label style="margin-bottom: 15px; margin-top: 25px;">New Blog Content:
-        <br/><textarea cols="50" rows="10" type="text" name="body" value="{{body_err}}"></textarea><p class="error" style="color: red;">{{body_err}}</p><br/>
+        <label>
+        <textarea name="blog_post" cols="100" rows="10" value="{{post_entry}}">{{post_entry}}</textarea>
         </label>
         
         <input type="submit" value="Add New Entry" />

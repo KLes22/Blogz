@@ -1,19 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Sign Up!</h1>
 
-<form action='/signup' method='post'>
-    <label>Email:
-        <input name='username' type='text'/><p class='error' style='color: red;'>{{username_err}}</p>
-    </label>
-    <label>Password:
-        <input name='password' type='password'/><p class='error' style='color: red;'>{{password_err}}</p>
-    </label>
-    <label>Verify Password:
-        <input name='verify' type='password'/><p class='error' style='color: red;'>{{verify_err}}</p>        
-    </label>
-    <input type='submit' value="Sign Me Up"/>
+<h2>New Account</h2>
+<form action="/signup" method="post">
+         
+    <label for="username">New Username:</label>
+    <input id="username" type="text" name="username" value='{{username}}'/>
+    
+    <br>
 
+    <label for="Password">Password:</label>
+    <input id="Password" type="password" name="Password" />
+    
+    <br>
+
+    <label for="VerifyPassword">Verify Password:</label>
+    <input id="VerifyPassword" type="password" name="VerifyPassword" />
+
+    <br>
+    <input class="submit" type="submit" value="Sign up"/>
 </form>
+
 {% endblock %}
