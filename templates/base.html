@@ -3,10 +3,16 @@
     <head>
         <title>{{title}}</title>
         <style>
+        h1.center {
+            text-align: center;
+            color: black;
+            font-size: 72px;
+        }
                 div.scrollmenu {
-                    background-color: #333;
+                    background-color: rgb(22, 189, 240);
                     overflow: auto;
                     white-space: nowrap;
+                    text-align: center;
                 }
                 
                 div.scrollmenu a {
@@ -18,7 +24,7 @@
                 }
                 
                 div.scrollmenu a:hover {
-                    background-color: #777;
+                    background-color: black;
                 }
                 </style>
                 </head>
@@ -33,7 +39,9 @@
                     <a href="/logout">Logout</a>
                 </div>
             </head>
-<h1>BlogZ</h1>
+           
+    <h1 class="center">BlogZ</h1>
+
 <body>
     
     {% with messages = get_flashed_messages() %}
